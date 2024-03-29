@@ -1,3 +1,15 @@
+[![wakatime](https://wakatime.com/badge/user/24440059-63c6-4941-8705-37b1b600436c/project/018e81f9-03c3-456b-bfa4-b0274ec41d23.svg)](https://wakatime.com/badge/user/24440059-63c6-4941-8705-37b1b600436c/project/018e81f9-03c3-456b-bfa4-b0274ec41d23)
+
+# Features
+- [✅] upload image
+- [✅] drag and drop image
+- [✅] ctrl + v to paste image
+- [✅] copy image to clipboard
+- [🟡] . . .
+
+# ScreenShot
+![image](https://drive.google.com/uc?export=view&id=1LWni2W7QnSY_Nqt5O3Qjz-R18Oq8t6xf)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
