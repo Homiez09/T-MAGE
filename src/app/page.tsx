@@ -9,6 +9,7 @@ import Image from "next/image";
 import { isImageType } from "@/libs/CheckType";
 import { HistoryProps } from "@/interfaces/HistoryProps";
 import { TextHistory } from "@/components/TextHistory";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   const [blobURL, setBlobURL] = useState<string>("");
@@ -67,6 +68,7 @@ export default function Home() {
 
   return (
     <div onPaste={() => pasteImage()}>
+      <Analytics/>
       <Toaster />
       <div className="flex flex-col items-center justify-center p-5 w-full gap-5">
         {blobURL ?
