@@ -1,10 +1,11 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "../components/Navbar";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata= {
+export const metadata = {
   title: 'T-MAGE',
   openGraph: {
     title: 'T-MAGE',
@@ -36,7 +37,7 @@ export const metadata= {
 };
 
 export default function RootLayout({
-children,
+  children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
@@ -48,6 +49,8 @@ children,
           {children}
         </div>
       </body>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2260579611756913" crossOrigin="anonymous"></script>
+
     </html>
   );
 }
