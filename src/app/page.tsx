@@ -11,10 +11,9 @@ import { HistoryProps } from "@/interfaces/HistoryProps";
 import { TextHistory } from "@/components/TextHistory";
 import { Analytics } from "@vercel/analytics/react"
 
-export default function Home() {
+export default () => {
   const [blobURL, setBlobURL] = useState<string>("");
-  const [textGen, setTextGen] = useState<any | null>(null);
-  const [history, setHistory] = useState<HistoryProps[]>([]);
+  const [textHistory, setTextHistory] = useState<HistoryProps[]>([]);
 
   const genAI = new GoogleGenerativeAI(process.env.GEMINI_API || "");
   const model = genAI.getGenerativeModel({ model: "gemini-pro-vision" });
@@ -31,8 +30,8 @@ export default function Home() {
   }
 
   const saveHistory = async (imageUrl: string, text: string) => {
-    const newHistory = [{ imageUrl, text }, ...history];
-    setHistory(newHistory);
+    const newHistory = [{ imageUrl, text }, ...textHistory];
+    setTextHistory(newHistory);
   }
 
   const generateText = async (base64: string) => {
@@ -44,7 +43,6 @@ export default function Home() {
         }
       }]);
       try {
-        await setTextGen(result.response.text());
         await saveHistory(base64, result.response.text());
       } catch (e) {
         // console.error(e);
@@ -68,9 +66,14 @@ export default function Home() {
 
   return (
     <div onPaste={() => pasteImage()}>
-      <Analytics/>
+      <Analytics />
       <Toaster />
       <div className="flex flex-col items-center justify-center p-5 w-full gap-5">
+        <div className="text-center">
+          <p className="text-2xl font-bold">T-MAGE</p>
+          <p className="text-md">Convert Image to Text by T-MAGE(AI)</p>
+        </div>
+
         {blobURL ?
           <>
             <Upload.Dragger
@@ -94,6 +97,7 @@ export default function Home() {
                 reader.readAsDataURL(file);
                 return false;
               }}
+              
               className="flex items-center justify-center w-full h-64 border-gray-300 rounded-lg shadow-md">
               <div className="flex flex-col items-center justify-center pt-5 pb-6">
                 <svg className="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
@@ -110,7 +114,7 @@ export default function Home() {
           </>
         }
 
-        <TextHistory history={history}/>
+        <TextHistory history={textHistory} />
       </div>
     </div>
   );
