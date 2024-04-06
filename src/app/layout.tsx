@@ -1,25 +1,16 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "../components/Navbar";
-import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: 'T-MAGE',
+  description: 'T-MAGE: Easily convert images to text with T-MAGE, an online tool that helps you create text from images quickly and accurately. Just upload your image, select the text resolution, and T-MAGE will do the rest! Perfect for converting handwritten images, newspaper articles, posters, documents, and much more.',
   openGraph: {
     title: 'T-MAGE',
-    description: `
-    Need to convert an image to text? 
-    T-MAGE AI can help! Easy-to-use online tool that supports English and many other languages. 
-    Powered by AI, T-MAGE can accurately and quickly convert images to text in multiple formats. 
-    Customize the size and style of the text, and easily download the converted text. Free! | 
-    ต้องการแปลงรูปภาพเป็นข้อความใช่ไหม! T-MAGE AI ช่วยคุณได้!
-    เครื่องมือออนไลน์ที่ใช้งานง่าย รองรับภาษาอังกฤษและอีกหลายภาษา
-    T-MAGE ใช้ปัญญาประดิษฐ์ (AI) ช่วยแปลงรูปภาพเป็นข้อความได้อย่างแม่นยำ รวดเร็ว และรองรับหลายรูปแบบ
-    คุณสามารถปรับขนาดและรูปแบบของข้อความได้ตามต้องการ และดาวน์โหลดข้อความที่แปลงเสร็จแล้วได้อย่างง่ายดาย ฟรี!`,
-    url: 'https://tmage.vercel.app',
-    siteName: 'Next.js',
+    description: 'Easily convert images to text with T-MAGE, an online tool that helps you create text from images quickly and accurately. Just upload your image, select the text resolution, and T-MAGE will do the rest! Perfect for converting handwritten images, newspaper articles, posters, documents, and much more.',
+    url: 'https://tmage.phumrapee.me',
     images: [
       {
         url: 'https://drive.google.com/uc?export=view&id=1LWni2W7QnSY_Nqt5O3Qjz-R18Oq8t6xf',

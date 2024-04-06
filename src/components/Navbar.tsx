@@ -11,8 +11,8 @@ export const Navbar = () => {
         },
         {
             title: "ABOUT",
-            link: "/",
-            isShow: true
+            link: "/about",
+            isShow: false
         },
     ]
     return (
