@@ -15,6 +15,6 @@ This project is create for the convenience of copy text from images or screensho
 - [🟡] . . .
 
 # ScreenShot
-![first page](https://github-production-user-asset-6210df.s3.amazonaws.com/77825705/322126335-4b92f519-f121-4af9-b82e-e5a3877f29e9.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240412T201217Z&X-Amz-Expires=300&X-Amz-Signature=fc24724e9c37dfad0fa8fb69b86b6cbcf392493ddf1dc64bfecb7583d884d299&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=0)
-![generating](https://github-production-user-asset-6210df.s3.amazonaws.com/77825705/322126346-0ecc65f1-1ce9-4373-b943-860caeda7ec2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240412T201248Z&X-Amz-Expires=300&X-Amz-Signature=dde9bea7c22daa6c31e3e53086ff3b64a4f2fcc23c59e4f9752df1f320df0597&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=0)
-![result image](https://github-production-user-asset-6210df.s3.amazonaws.com/77825705/322131200-38620d7b-ed0d-4be9-8554-d95d41ed93c2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240412T203406Z&X-Amz-Expires=300&X-Amz-Signature=f61bbebf5dbba9cb72b123ec0f696a70061af38d8be1396aedc6987e9fbce82d&X-Amz-SignedHeaders=host&actor_id=77825705&key_id=0&repo_id=779463775)
+![before generate](https://github.com/Homiez09/T-MAGE/assets/77825705/ee17430c-a75c-4a14-a7df-65dee534609c)
+![generating](https://github.com/Homiez09/T-MAGE/assets/77825705/345e89ef-3ca5-4eec-9d43-9f0e0d492e85)
+![result](https://github.com/Homiez09/T-MAGE/assets/77825705/dc0635df-1770-4c92-aa3c-477efe33c26d)
