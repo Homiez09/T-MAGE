@@ -1,9 +1,9 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "../components/Navbar";
+import Head from 'next/head';
 
 const inter = Inter({ subsets: ["latin"] });
-
 export const metadata = {
   title: 'T-MAGE',
   description: 'T-MAGE: Easily convert images to text with T-MAGE, an online tool that helps you create text from images quickly and accurately. Just upload your image, select the text resolution, and T-MAGE will do the rest! Perfect for converting handwritten images, newspaper articles, posters, documents, and much more.',
@@ -34,6 +34,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="google-adsense-account" content="ca-pub-2260579611756913"></meta>
+      </Head>
       <body className={inter.className + " flex flex-col items-center bg-[#f6f8fc]"}>
         <Navbar />
         <div className="flex flex-col container">
