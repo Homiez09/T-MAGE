@@ -34,9 +34,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <meta name="google-adsense-account" content="ca-pub-2260579611756913"></meta>
-      </Head>
       <body className={inter.className + " flex flex-col items-center bg-[#f6f8fc]"}>
         <Navbar />
         <div className="flex flex-col container">
